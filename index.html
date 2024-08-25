@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left section: Shipping Information -->
+        <div class="left">
+            <h2>Checkout</h2>
+            <form>
+                <label for="delivery"><input type="radio" id="delivery" name="shipping" checked> Delivery</label>
+                <label for="pickup"><input type="radio" id="pickup" name="shipping"> Pick up</label>
+                
+                <div>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter full name">
+                </div>
+                
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter email address">
+                </div>
+                
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter phone number">
+                </div>
+                
+                <div>
+                    <label for="country">Country</label>
+                    <select id="country">
+                        <option>Select country</option>
+                        <!-- Add more options here -->
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="city">City</label>
+                    <input type="text" id="city" placeholder="Enter city">
+                </div>
+                
+                <div>
+                    <label for="state">State</label>
+                    <input type="text" id="state" placeholder="Enter state">
+                </div>
+                
+                <div>
+                    <label for="zip">ZIP Code</label>
+                    <input type="text" id="zip" placeholder="Enter ZIP code">
+                </div>
+
+                <div>
+                    <input type="checkbox" id="terms">
+                    <label for="terms">I agree to the Terms and Conditions</label>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Right section: Review your cart -->
+        <div class="right">
+            <h3>Review your cart</h3>
+            <div class="cart-item">
+                <span>Sofa Premium</span>
+                <span>$20.00</span>
+            </div>
+            <div class="cart-item">
+                <span>Desk</span>
+                <span>$25.00</span>
+            </div>
+
+            <div class="summary">
+                <div>
+                    <span>Subtotal</span>
+                    <span>$45.00</span>
+                </div>
+                <div>
+                    <span>Shipping</span>
+                    <span>$5.00</span>
+                </div>
+                <div>
+                    <span>Discount</span>
+                    <span>-$10.00</span>
+                </div>
+                <div>
+                    <strong>Total</strong>
+                    <strong>$40.00</strong>
+                </div>
+            </div>
+
+            <button>Pay Now</button>
+
+            <p class="secure">Secure Checkout - SSL Encrypted</p>
+        </div>
+    </div>
+</body>
+</html>
